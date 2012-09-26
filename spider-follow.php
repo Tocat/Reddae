@@ -4,6 +4,21 @@
  *Tocat
  *2012/8/30
  *爬取用户关注和粉丝
+ 代码只实现了基本功能大家可以自行补充
+
+使用方法：
+1.先手动打开weibo.cn网站，注意是.cn！手机微博网站。
+2.登录微博，然后获取地址栏参数gsid
+3.将参数复制到源码的gsid处
+4.把服务器的超时时间设长一点，让PHP有足够时间运行
+5.将需要爬取的用户ID替换代码中的百度的ID
+6.运行
+
+补充：
+1.现在只实现了输出主页地址和用户名，没有保存到数据库中，大家可以自行添加 
+2.只需要修改下URL就可以爬取用户粉丝列表
+3.PHP效率较低，大量爬取可以用FACEBOOK的Hiphop将其转为c++，@https://github.com/facebook/hiphop-php
+4.交流请联系:tocat(在)outlook.com
  */
 
 header("Content-Type: text/html; charset=utf-8");      //将字符集定义为UTF-8
